@@ -31,19 +31,26 @@ section {
 }
 .logo_wrapper {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    max-width: 400px;
 }
 .logo_wrapper img {
-    max-width: 40px;
-    max-height: 40px;
-    vertical-align: middle;
+    max-width: 50px;
+    max-height: 60px;
+    margin-right: 10px;
 }
 .logo_wrapper h4 {
     display: inline;
     font-family: 'Roboto',sans-serif;
-    font-weight: 800;
-    font-size: 24px;
-    vertical-align: middle;
+    font-weight: 600;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #009ee0;
+    line-height: 36px;
+}
+.logo_wrapper p {
+    font-size: 13px;
+    color: gray;
 }
 .nav_wrapper ul {
     display: flex;
@@ -59,11 +66,31 @@ section {
     text-decoration: none;
     font-family: 'Roboto',sans-serif;
     padding: 10px;
+    color: #009ee0;
+    font-size: 16px;
+    font-weight: 600;
 }
-.headlight {
+.nav_wrapper a:hover {
+    color: gray;
+}
+.nav_wrapper a:active {
+    color: red;
+}
+.headline {
     padding: 10px;
     max-height: 500px;
     height: 100vw;
     background: url(/website_tools/img/mainpic.JPG) no-repeat;
     background-position: center;
+}
+.number p {
+    display: inline-block;
+}
+.number a {
+    text-decoration: none;
+    font-family: 'Roboto',sans-serif;
+    padding: 10px;
+    color: red;
+    font-size: 16px;
+    font-weight: 600;
 }
