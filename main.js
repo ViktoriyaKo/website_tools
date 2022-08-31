@@ -24,14 +24,15 @@ const moveToSlide = (carousel, currentSlide, targetSlide) => {
 prevButton.addEventListener('click', event => {
     const currentSlide = carousel.querySelector('.active_slide');
     const prevSlide = currentSlide.previousElementSibling;
-
+    
     moveToSlide(carousel,currentSlide, prevSlide);
+
 })
 //when I click right, move slides to the right
 nextButton.addEventListener('click', event => {
     const currentSlide = carousel.querySelector('.active_slide');
     const nextSlide = currentSlide.nextElementSibling;
-    
+
     moveToSlide(carousel, currentSlide, nextSlide);
 })
 //when i click the indicator, move to that slide
